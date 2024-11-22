@@ -1,0 +1,158 @@
+body {
+  background: #D2D9D3;
+}
+p {
+  color: black;
+}
+
+@font-face {
+  font-family: 'myTitleFont';
+  src: url('Quagi.ttf');
+}
+
+@font-face {
+  font-family: 'mybodytext';
+  src: url('AlteHaasGroteskBold.ttf');
+}
+
+html {
+  font-size: large;
+  font-family: myTitleFont;
+  padding: 5px 50px;
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-left: 0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("flatocean.avif");
+  background-size: cover;
+  background-position: left;
+  color: white;
+  text-align: center;
+  font-family: myTitleFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+  width: 25%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0E364B;
+  text-align: center;
+}
+
+.nav_item {
+  display: inline-block;
+  font-family: mybodytext;
+  font-size: 1em;
+}
+
+.nav_item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav_item a:hover {
+  background-color: #185b7f;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+
+  h3 {
+  font-family: myTitlefont;
+  font-size: 40px;
+  color: #0d3449;
+}
+
+h4 {
+  font-family: myTitlefont;
+  font-size: 40px;
+  color: #0d3449;
+}
+
+.intro-section, .why-website-section {
+  display: flex;
+  flex-direction: row-reverse; /* Moves the image to the right */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Spread items with space between */
+  gap: 10px; /* Reduced gap between image and text */
+}
+
+.caption {
+  margin-left: 900px;
+  font-family: mybodytext;
+}
+
+.image1, .image2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 150px;
+  object-fit: cover;
+}
+
+.intro-text-box, .why-text-box {
+  flex-grow: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  font-family: mybodytext;
+}
+
+.site-footer {
+  background-color: #0E364B;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-family: mybodytext;
+}
+
+.site-footer p, .site-footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.fa {
+  margin-right: 5px;
+}
